@@ -1,0 +1,24 @@
+---
+title: Le Wagon - team
+---
+
+<div id="team">
+  <div class="about-content">
+    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
+    <ul class="list-inline">
+      <% ["mathieuderambure"].each do |ghname| %>
+        <li>
+          <% link_to "https://kitt.lewagon.com/alumni/#{ghname}", target: "_blank" do %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/ghnames/#{ghname}", class: "img-circle" %>
+          <% end %>
+          <h2><%= ghname %></h2>
+          <p>
+            <% link_to "https://github.com/#{ghname}", target: "_blank" do %>
+              <i class="fa fa-github"></i> <%= ghname %>
+            <% end %>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
